@@ -5,7 +5,7 @@
     border-radius: 0.5rem;
     background-color: variables.$btn-bg-color;
     color: variables.$heading-color;
-    font-size: .870rem;
+    font-size: .880rem;
     font-weight: 700;
     text-transform: uppercase;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
@@ -13,7 +13,25 @@
 
 
     &:hover{
+        transition: .25s linear;
         background-color: variables.$heading-color;
         color: white;
+    }
+}
+
+@mixin btn-2{
+    padding: .800rem 1.5rem;
+    border-radius: 0.5rem;
+    background-color: variables.$btn-orange;
+    color: white;
+    font-size: .880rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+            0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+    &:hover{
+        transition: .25s linear;
+        background-color: #FF9B62;
     }
 }
