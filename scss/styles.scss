@@ -1,5 +1,22 @@
 @use 'globals/reset';
 @use 'globals/typography';
 @use 'globals/variables';
-@use 'globals/mixins.scss';
+@use 'globals/mixins.scss' as *;
 
+/// NAVBAR ///
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.7rem 4rem 0 4rem;
+    margin-bottom: 3.5rem;
+
+    .logo{
+        width: 50px;
+    }
+
+    .btn{
+        @include btn;
+    }
+}
