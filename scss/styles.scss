@@ -21,6 +21,12 @@
     }
 }
 
+@include tablet-view{
+    .nav-container{
+        padding: 2.5rem 2rem 0 2rem;
+    }
+}
+
                             /// MAIN SECTION ///
 /// FIRST SECTION ///
 
@@ -72,6 +78,10 @@
         .img-area{
             grid-area: img-area;
         }
+
+        .img-keyboard-2, .img-keyboard-3{
+            display: none;
+        }
     
         .img-keyboard{
             width: 100%;
@@ -86,6 +96,10 @@
             right: -110px;
         }
     }
+}
+
+@include tablet-view{
+
 }
 
 /// SECOND SECTION ///
