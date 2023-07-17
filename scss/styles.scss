@@ -24,6 +24,10 @@
 @include tablet-view{
     .nav-container{
         padding: 2.5rem 2rem 0 2rem;
+
+        .btn{
+            padding: 1rem 1.5rem;
+        }
     }
 }
 
@@ -262,6 +266,7 @@
 
             .typemaster{
                 padding-left: 1rem;
+                padding-bottom: 1rem;
             }
 
             h2{
@@ -350,7 +355,6 @@
         padding: 2.2rem 0;
         color: variables.$text-color;
         text-align: center;
-        // font-weight: 500;
     }
     .bold{
         font-weight: 700;
