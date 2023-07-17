@@ -9,7 +9,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.7rem 6rem 0 6rem;
+    padding: 1.7rem 7rem 0 7rem;
     margin-bottom: 3rem;
 
     .logo{
@@ -34,7 +34,7 @@
         grid-auto-flow: row;
         grid-template-areas:
           "text-area img-area";
-        padding: 0 6rem;
+        padding: 0 7rem;
         position: relative;
         overflow: hidden;
     
@@ -83,12 +83,79 @@
             width: 200px;
             position: absolute;
             z-index: -2;
-            right: -125px;
+            right: -110px;
         }
     }
 }
 
+/// SECOND SECTION ///
 
-  
-  
-  
+.second-section{
+    margin-bottom: 2rem;
+
+    .second-container{
+        display: grid;
+        grid-template-columns: 0.8fr 1.1fr 1.1fr;
+        grid-template-rows: 1fr;
+        gap: 0px 30px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "first-img second-img text-zone";
+        padding: 0 7rem;
+        position: relative;
+        overflow: hidden;
+
+        .first-img{
+            background-color: #F16718;
+            border-radius: 1rem;
+            grid-area: first-img;
+        }
+
+        .hover-img{
+            width: 100%;
+            object-fit: cover;
+            mix-blend-mode: multiply;
+            opacity: 0.7486005425453186;
+        }
+    
+        .second-img{
+            grid-area: second-img;
+        }
+
+        .img-key{
+            width: 100%;
+        }
+
+        .first-img img, .second-img img{
+            height: 100%;
+            object-fit: cover;
+            border-radius: 1rem;
+        }
+        
+        .text-zone{
+            padding-left: 8rem;
+            align-self: center;
+            grid-area: text-zone; 
+        }
+
+        h2{
+            color: variables.$heading-color;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+
+        .typemaster{
+            font-weight: 500;
+            color: variables.$text-color;
+        }
+
+        .square-2{
+            width: 200px;
+            position: absolute;
+            z-index: -2;
+            left: -110px;
+            bottom: 0;
+        }
+    }
+}
