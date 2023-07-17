@@ -318,6 +318,30 @@
     }
 }
 
+@include tablet-view{
+    .third-section{
+        .third-container{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 50px 100px;
+            padding: 0 2rem;
+
+            h3{
+                font-size: 1.2rem;
+            }
+
+            .compatible-heading{
+                width: 100px;
+            }
+
+            .rgb{
+                width: 150px;
+            }
+        }
+    }
+}
+
                             /// FOOTER SECTION ///
 
 
