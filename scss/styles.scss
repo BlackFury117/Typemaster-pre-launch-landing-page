@@ -99,7 +99,40 @@
 }
 
 @include tablet-view{
+    .first-section{
+        .first-container{
+            padding: 0 2rem;
 
+            h1{
+                font-size: 2.6rem;
+                font-weight: 800;
+            }
+
+            .improve{
+                width: 350px;
+            }
+
+            .btn-2{
+                padding: 1rem 1.5rem;
+            }
+
+            .square{
+                display: none;
+            }
+
+            .img-keyboard{
+                display: none;
+            }
+
+            .img-keyboard-2{
+                display: block;
+                width: 100%;
+                border-radius: 1rem;
+                position: relative;
+                right: -110px;
+            }
+        }
+    }
 }
 
 /// SECOND SECTION ///
