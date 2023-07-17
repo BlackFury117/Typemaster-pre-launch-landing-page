@@ -169,7 +169,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        gap: 30px;
+        gap: 25px;
         padding: 0 7rem;
         height: auto;
 
@@ -204,5 +204,20 @@
             font-weight: 500;
             color: variables.$text-color;
         }
+    }
+}
+
+                            /// FOOTER SECTION ///
+
+
+.footer-section{
+    .text-footer{
+        padding: 2.2rem 0;
+        color: variables.$text-color;
+        text-align: center;
+        // font-weight: 500;
+    }
+    .bold{
+        font-weight: 700;
     }
 }
